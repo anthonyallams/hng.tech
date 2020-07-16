@@ -50,7 +50,8 @@ img {
   transition: all 0.5s;
 }
 
-img:hover {
+img:hover,
+.partner-card:hover {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
   /* box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05); */

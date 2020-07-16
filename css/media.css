@@ -28,6 +28,19 @@
     height: 50rem;
     margin-top: 0.1rem;
   }
+
+  .partner3 {
+    background: url(../images/p-iroko.svg) no-repeat center center/contain;
+  }
+  .partner4 {
+    background: url(../images/p-creditel.svg) no-repeat center center/contain;
+  }
+  .partner7 {
+    background: url(../images/p-flutter.svg) no-repeat center center/contain;
+  }
+  .partner8 {
+    background: url(../images/p-paga.svg) no-repeat center center/contain;
+  }
 }
 
 @media (max-width: 901px) {
@@ -291,6 +304,17 @@
   .two-image {
     grid-column: span 1;
   }
+
+  /* About us: our partner */
+  .partner-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partner-card {
+    grid-column: span 1;
+    width: 100%;
+    height: 6rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -344,6 +368,17 @@
   .four-images .image-card {
     width: 90%;
   }
+  /* About us: our partner */
+  /* .partner-images {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .partner-card {
+    grid-column: span 1;
+    width: 100%;
+    height: 6rem;
+  } */
 }
 
 @media (max-width: 570px) {
@@ -390,6 +425,16 @@
 
   .four-images .image-card {
     width: 100%;
+  }
+  .partner-images {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .partner-card {
+    grid-column: span 1;
+    width: 100%;
+    height: 6rem;
   }
 }
 

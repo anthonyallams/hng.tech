@@ -379,12 +379,12 @@ input[type="checkbox"] {
   transition: all 0.4s ease-in;
 }
 
-.four-content .l-heading::after {
+.four-content h2::after {
   content: "";
   position: absolute;
   left: 50%;
   bottom: -20px;
-  width: 10%;
+  width: 30%;
   height: 2px;
   transform: translate(-50%, -50%);
   background-color: var(--clr-black);
@@ -468,6 +468,69 @@ input[type="checkbox"] {
 .four-images .image-card img,
 .four-images .image-card h4 {
   margin-bottom: 1rem;
+}
+
+/*--------------------
+ SECTION 4:OUR PARTNERS CSS STYLE
+-----------------*/
+.our-partners {
+  padding: 8rem 5rem;
+  background: var(--clr-light-blue);
+}
+
+.our-partners .partner-content {
+  margin-top: -1rem;
+  margin-bottom: 6rem;
+}
+
+.our-partners .partner-content h2:hover {
+  color: var(--clr-white);
+  position: relative;
+}
+
+.partner-images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5rem;
+}
+
+.partner-card {
+  grid-column: span 1;
+  width: 100%;
+  height: 6rem;
+  margin: auto;
+  transition: all 0.4s ease-in;
+}
+
+.partner1 {
+  background: url(../images/p-andela.svg) no-repeat center center/contain;
+}
+.partner2 {
+  background: url(../images/p-cchub.svg) no-repeat center center/contain;
+}
+.partner3 {
+  background: url(../images/p-iroko.svg) no-repeat center center/cover;
+}
+.partner4 {
+  background: url(../images/p-creditel.svg) no-repeat center center/cover;
+}
+.partner5 {
+  background: url(../images/p-techpoint.svg) no-repeat center center/contain;
+}
+.partner6 {
+  background: url(../images/p-konga.svg) no-repeat center center/contain;
+}
+.partner7 {
+  background: url(../images/p-flutter.svg) no-repeat center center/cover;
+}
+.partner8 {
+  background: url(../images/p-paga.svg) no-repeat center center/cover;
+}
+.partner9 {
+  background: url(../images/p-paystack.svg) no-repeat center center/contain;
+}
+.partner10 {
+  background: url(../images/p-softcom.svg) no-repeat center center/contain;
 }
 
 /*--------------------
