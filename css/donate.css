@@ -331,7 +331,7 @@ h4.sub {
   gap: 3rem;
 }
 
-.group-images .image-card {
+.groups-images .image-card {
   grid-column: span 1;
   display: flex;
   flex-direction: column;
@@ -339,40 +339,36 @@ h4.sub {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* height: 40rem; */
+  height: 35rem;
   margin: auto;
-  border: 1px solid red;
 }
 
-.img-card .img1 {
+.image-card .img1 {
   background: url(../images/donate3a.svg) no-repeat center center/cover;
 }
-.img-card .img2 {
+.image-card .img2 {
   background: url(../images/donate3b.svg) no-repeat center center/cover;
 }
-.img-card .img3 {
-  background: url(../images/donate3c.svg) no-repeat center center/cover;
+.image-card .img3 {
+  background: url(../images/nesa.svg) no-repeat center center/cover;
 }
 
-.img-card {
+.image-card .img-card {
   width: 100%;
-  height: 30rem;
+  height: 60rem;
 }
 
-.image-card .image-card h4 {
-  font-size: 3rem;
+.image-card .btn-group {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+}
+
+.image-card .card-heading {
+  font-size: 2rem;
   font-weight: 600;
   padding: 2rem 0;
-}
-
-.image-card p {
-  color: var(--clr-body-txt);
-  width: 100%;
-}
-
-.image-card img,
-.image-card h4 {
-  margin-bottom: 1rem;
+  margin-top: -5rem;
 }
 
 /*--------------------
