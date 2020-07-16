@@ -1,0 +1,674 @@
+/*-----------------------------
+ TABLE OF CONTENT
+* --------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.TYPOGRAPHY CSS STYLE
+* 03.COMPONENTS
+*     3A.BUTTONS
+*     3B.ANIMATIONS
+* 04.NAVIGATION CSS STYLE
+* 05.MAIN CSS STYLES
+* 06.POPUP CSS STYLES
+* 07.FOOTER CSS STYLE
+* 08.SCROLL TO TOP STYLE
+* 09.ABOUT US CSS STYLE
+* 10.SCROLL TO TOP STYLE
+* 11.MEDIA QUERIES TOP STYLE
+* ----------------------------------------
+*/
+
+/*--------------------
+ 1. GLOBAL CSS STYLE
+-----------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-body-txt: #2f2e41;
+  --clr-dark-blue: #084482;
+  --clr-light-blue: #00aeff;
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-dark-gray: #777;
+  --clr-light-gray: #999;
+  --menu-speed: 0.75s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+img:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  /* box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05); */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  transition: all 0.35s ease;
+  text-decoration: none;
+}
+
+/*--------------------
+ 2. TYPOGRAPHY
+-----------------*/
+
+body {
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
+  background-color: var(--clr-white);
+  color: var(--clr-body-txt);
+  font-weight: 400;
+}
+
+/*--------------------
+ 3. COMPONENTS CSS STYLE
+-----------------*/
+/*--------------------
+  3A.BUTTON CSS STYLE
+-----------------*/
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: var(--clr-light-blue);
+  color: var(--clr-white);
+  text-decoration: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.4s;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background: var(--clr-dark-blue);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #24116a;
+}
+
+.btn--white:after {
+  background-color: #fff;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+/*--------------------
+  3B.ANIMATIONS CSS STYLE
+-----------------*/
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/*--------------------
+ 4. NAVBAR CSS STYLE
+-----------------*/
+.main-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  opacity: 0.2;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+.nav {
+  background: transparent;
+  color: var(--clr-dark-blue);
+  min-height: 9vh;
+  border-width: thin;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.nav-scrolled {
+  background-color: var(--clr-white);
+  box-shadow: 0 3px 20px rgba(black, 0.2);
+}
+
+.container-nav {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.brand {
+  width: 25rem;
+  justify-self: flex-start;
+}
+
+.brand .brand-img {
+  max-width: 100%;
+}
+
+.menu-links {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-link {
+  color: var(--clr-dark-blue);
+  text-transform: capitalize;
+  padding: 0 1.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.menu-link:hover {
+  color: var(--clr-light-blue);
+  transition: 0.3s ease-in;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  /* box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05); */
+  background: transparent;
+}
+
+.menu-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  -webkit-transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  width: 65%;
+  height: 2px;
+  background-color: var(--clr-light-blue);
+  transition: transform 0.3s;
+}
+
+.menu-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.current::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Do not display the toggler and label toggler */
+input[type="checkbox"] {
+  display: none;
+}
+
+.toggler-label {
+  display: none;
+}
+
+/*--------------------
+ 5. MAIN CSS STYLE
+-----------------*/
+.main {
+  position: relative;
+  color: var(--clr-dark-blue);
+  padding: 5rem;
+  margin: auto;
+}
+
+.main-container {
+  display: grid;
+  /* grid-template-columns: 1fr minmax(30rem, 2fr) 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.main-content {
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  /* margin: -20rem 0 0; */
+  width: 100%;
+  margin-top: 5rem;
+}
+.main-image {
+  grid-column: 2 / -1;
+  background: url("/images/bg.png") no-repeat center center/cover;
+  width: 100%;
+  height: 80rem;
+  transform: translateY(-2000rem);
+  animation: moveInRight 1.3s ease-in forwards 1.5s;
+  backface-visibility: hidden;
+  margin-top: -25rem;
+  transition: all 0.5s;
+}
+
+.main-image:hover {
+  /* -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05); */
+}
+
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-align: start;
+  margin: 6rem 0 2rem;
+  font-size: 1.6rem;
+  animation: moveInTop 1.3s ease-in;
+  backface-visibility: hidden;
+  transition: all 0.4s ease-in;
+}
+
+.l-heading {
+  font-size: 3.8rem;
+  margin: 0.5rem 0 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  transform: translateX(-2000rem);
+  animation: moveInLeft 1.5s ease-in-out forwards 1s;
+  backface-visibility: hidden;
+  transition: all 0.4s ease-in;
+}
+
+.l-heading:hover,
+.subtitle:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: var(--clr-light-blue);
+}
+
+.lead {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  transform: translateX(-2000rem);
+  animation: moveInLeft 1.5s ease-in forwards 1.6s;
+  backface-visibility: hidden;
+}
+
+.l-heading,
+.lead {
+  max-width: 100%;
+  /* margin-left: 3rem; */
+}
+
+.main .subtitle,
+.main .btn {
+  text-align: center;
+}
+
+/*--------------------
+ 06. POPUP CSS STYLE
+-----------------*/
+.popup {
+  /* height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9990; */
+  padding: 10rem 5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--clr-light-blue),
+    var(--clr-dark-blue)
+  );
+}
+
+.popup-content {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 40rem; */
+  /* box-shadow: 0 2rem 4rem rgba(var(--clr-black), 0.2); */
+}
+
+.content {
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../images/popup.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(var(--clr-black), 0.2);
+}
+
+.form {
+  color: var(--clr-light-blue);
+}
+.book-form {
+  width: 50%;
+  padding: 6rem;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form-input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid var(--clr-light-blue);
+}
+
+.form-input:focus:invalid {
+  border-bottom: 3px solid #d64528;
+}
+
+.form-title {
+  margin-bottom: 3rem;
+}
+
+.form-title h2 {
+  position: relative;
+  transition: all 0.4s ease-in;
+}
+
+.form-title h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  width: 15%;
+  height: 2px;
+  transform: translate(-50%, -50%);
+  background-color: var(--clr-black);
+  text-align: center;
+}
+
+.form-title h2:hover {
+  color: var(--clr-dark-blue);
+  transform: translateY(-3px);
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.form-input::-webkit-input-placeholder {
+  color: var(--clr-dark-gray);
+}
+.form-input:placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.form-label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form-group .btn {
+  border: none;
+  cursor: pointer;
+}
+
+/*--------------------
+ 07. FOOTER CSS STYLE
+-----------------*/
+.footer {
+  position: relative;
+  background: url(/images/footer1.jpg) no-repeat center center/cover;
+  color: var(--clr-white);
+  padding: 7rem 10rem;
+  margin: auto;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--clr-dark-blue);
+  opacity: 0.9;
+  /* z-index: -100; */
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  grid-column: 1 / 3;
+  padding-right: 5rem;
+  border-right: 2px solid var(--clr-white);
+}
+
+.footer-links {
+  grid-column: 3 / 4;
+  margin-top: -5rem;
+}
+
+.footer-subscribe {
+  grid-column: 4 / 6;
+}
+
+.card-title .logo {
+  max-width: 30rem;
+}
+
+.footer-card {
+  z-index: 1;
+}
+.footer-links {
+  margin-top: 1rem;
+}
+.footer-subscribe {
+  margin-top: -3rem;
+}
+
+.footer-card h3 {
+  font-size: 2.2rem;
+}
+
+.footer p {
+  color: var(--clr-white);
+  padding: 1rem 0;
+}
+
+.footer p span {
+  display: block;
+}
+
+.btn-link {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  background: var(--clr-white);
+  color: var(--clr-black);
+}
+
+.btn-link i {
+  margin-left: 0.5rem;
+}
+
+.btn-link:hover {
+  background: var(--clr-light-blue);
+  color: var(--clr-white);
+  border-color: #0a1c4f;
+}
+
+.btn-link:hover i {
+  color: var(--clr-black);
+}
+
+.footer-card .card-body,
+.body-list-items a {
+  color: rgba(255, 255, 255, 0.702);
+}
+
+.footer-card .card-title {
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.footer-item + .footer-item {
+  margin-top: 1.5rem;
+}
+
+.footer-item a {
+  color: var(--clr-white);
+}
+
+.footer-appendage {
+  margin-top: 5rem;
+  padding: 1rem 2rem;
+  background: #222;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: var(--clr-white);
+  z-index: 2;
+}
+
+.footer-card .body-list-items {
+  padding: 0.5rem 0;
+}
+
+.copyright {
+  z-index: 6;
+}
+
+.copyright a {
+  color: var(--clr-white);
+  text-decoration: underline;
+}
+
+.footer-social {
+  z-index: 6;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-social .social-item {
+  padding: 1.5rem;
+}
+.footer-social .social-item i {
+  color: var(--clr-white);
+}
