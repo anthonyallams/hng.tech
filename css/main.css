@@ -471,7 +471,8 @@ input[type="checkbox"] {
 }
 
 .form-title {
-  margin-bottom: 3rem;
+  margin-top: -3rem;
+  margin-bottom: 5rem;
 }
 
 .form-title h2 {

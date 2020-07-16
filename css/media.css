@@ -279,6 +279,41 @@
     background: var(--clr-light-blue);
     z-index: -10;
   }
+
+  /* Donate: SECTION ONE-Support */
+  .support-container {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  .support-content,
+  .support-image {
+    grid-column: span 1;
+  }
+  .support-image {
+    width: 80%;
+    height: 100%;
+    transform: translateY(-2000rem);
+    animation: moveInRight 1.3s ease-in forwards 1.5s;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: -0.5rem;
+  }
+
+  .support-img {
+    background: url("../images/donatebg.svg") no-repeat center center/cover;
+    width: 100%;
+    height: 40rem;
+  }
+
+  .support .btn {
+    border: none;
+    margin-top: -0.5rem;
+    text-align: center;
+    width: 65%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -379,6 +414,36 @@
     width: 100%;
     height: 6rem;
   } */
+  /* Donate.html Section two-Donate */
+  .donate {
+    padding: 5rem;
+  }
+  .donate-container {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-content,
+  .donate-image {
+    grid-column: span 1;
+    margin: auto;
+  }
+
+  .donate-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    width: 80%;
+  }
+  .donate-content h2 {
+    margin-bottom: 3rem;
+  }
+  .donate-image {
+    width: 100%;
+    height: 40rem;
+  }
 }
 
 @media (max-width: 570px) {
@@ -436,6 +501,47 @@
     width: 100%;
     height: 6rem;
   }
+
+  /* Donate.html Section 1-support */
+  .support-img {
+    background: url("../images/donatebg.svg") no-repeat center center/cover;
+    width: 100%;
+    height: 40rem;
+  }
+
+  .support-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .support .btn {
+    border: none;
+    margin-top: -4rem;
+    text-align: center;
+    width: 70%;
+  }
+
+  /* Donate.html Section 2-donate */
+  .donate {
+    padding: 5rem 3rem 0;
+  }
+  .donate-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    width: 100%;
+  }
+  .donate-content h2 {
+    margin-bottom: 3rem;
+  }
+  .donate-image {
+    width: 100%;
+    height: 40rem;
+    margin-top: -4rem;
+  }
 }
 
 @media (max-width: 530px) {
@@ -470,5 +576,16 @@
     height: 28%;
     background: var(--clr-light-blue);
     z-index: -10;
+  }
+  .support-img {
+    background: url("../images/donatebg.svg") no-repeat center center/cover;
+    width: 100%;
+    height: 30rem;
+  }
+  .support .btn {
+    border: none;
+    margin-top: -3rem;
+    text-align: center;
+    width: 100%;
   }
 }
