@@ -267,7 +267,7 @@ body {
   background: transparent;
 }
 
-.menu-link::after {
+/* .menu-link::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -283,7 +283,7 @@ body {
 
 .menu-link:hover::after {
   transform: translateX(-50%) scaleX(1);
-}
+} */
 
 .current::after {
   transform: translateX(-50%) scaleX(1);

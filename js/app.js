@@ -1,7 +1,7 @@
 //Smooth Scrolling
 $("#nav a, .btn").on("click", (e) => {
   if (this.hash !== "") {
-    e.preventDefault();
+    // e.preventDefault();
 
     const hash = this.hash;
     $("html, body").animate(
