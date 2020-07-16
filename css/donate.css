@@ -102,7 +102,7 @@ input[type="checkbox"] {
    SECTION ONE CSS STYLE
   -----------------*/
 .support {
-  padding: 10rem 5rem 5rem;
+  padding: 10rem 5rem;
   background: var(--clr-white);
   color: var(--clr-dark-blue);
 }
@@ -153,9 +153,9 @@ input[type="checkbox"] {
   font-size: 3.8rem;
   font-weight: 700;
   line-height: 1.1;
-  transform: translateX(-2000rem);
+  /* transform: translateX(-2000rem);
   animation: moveInLeft 1.5s ease-in-out forwards 1s;
-  backface-visibility: hidden;
+  backface-visibility: hidden; */
   min-width: 100%;
   color: var(--clr-dark-blue);
 }
@@ -164,23 +164,11 @@ h4.sub {
   font-size: 2.5rem;
   font-weight: 600;
   padding: 2rem 0;
-  transform: translateX(-2000rem);
-  animation: moveInLeft 1.5s ease-in-out forwards 1s;
-  backface-visibility: hidden;
 }
 
 .lead {
   font-size: 1.8rem;
   margin-bottom: 3rem;
-  transform: translateX(-2000rem);
-  animation: moveInLeft 1.5s ease-in forwards 1.6s;
-  backface-visibility: hidden;
-}
-
-.support p {
-  transform: translateX(-2000rem);
-  animation: moveInLeft 1.5s ease-in forwards 1.6s;
-  backface-visibility: hidden;
 }
 
 .l-heading,
@@ -231,9 +219,9 @@ h4.sub {
   background: url("../images/donatebg2.svg") no-repeat center center/cover;
   width: 100%;
   height: 50rem;
-  transform: translateY(-2000rem);
+  /* transform: translateY(-2000rem);
   animation: moveInRight 1.3s ease-in forwards 1.5s;
-  backface-visibility: hidden;
+  backface-visibility: hidden; */
 }
 
 .l-heading {
@@ -241,18 +229,18 @@ h4.sub {
   /* margin: 5rem -10rem 0 0; */
   font-weight: 700;
   line-height: 1.1;
-  transform: translateX(-2000rem);
+  /* transform: translateX(-2000rem);
   animation: moveInLeft 1.5s ease-in-out forwards 1s;
-  backface-visibility: hidden;
+  backface-visibility: hidden; */
   min-width: 100%;
 }
 
 .lead {
   font-size: 1.8rem;
   margin-bottom: 3rem;
-  transform: translateX(-2000rem);
+  /* transform: translateX(-2000rem);
   animation: moveInLeft 1.5s ease-in forwards 1.6s;
-  backface-visibility: hidden;
+  backface-visibility: hidden; */
 }
 
 .l-heading,

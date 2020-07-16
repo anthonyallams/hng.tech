@@ -345,7 +345,7 @@ input[type="checkbox"] {
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05); */
 }
 
-.subtitle {
+.main .subtitle {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   text-align: start;
@@ -356,7 +356,7 @@ input[type="checkbox"] {
   transition: all 0.4s ease-in;
 }
 
-.l-heading {
+.main .l-heading {
   font-size: 3.8rem;
   margin: 0.5rem 0 2rem;
   font-weight: 700;
@@ -374,7 +374,7 @@ input[type="checkbox"] {
   color: var(--clr-light-blue);
 }
 
-.lead {
+.main .lead {
   font-size: 1.8rem;
   margin-bottom: 3rem;
   transform: translateX(-2000rem);
@@ -483,7 +483,7 @@ input[type="checkbox"] {
 .form-title h2::after {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 20%;
   bottom: -20px;
   width: 15%;
   height: 2px;
