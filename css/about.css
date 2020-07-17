@@ -121,7 +121,7 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  margin: 5rem 0 0;
+  margin-top: 10rem;
 }
 .one-image {
   grid-column: 1 / -1;
@@ -131,7 +131,8 @@ input[type="checkbox"] {
   transform: translateY(-2000rem);
   animation: moveInRight 1.3s ease-in forwards 1.5s;
   backface-visibility: hidden;
-  margin: auto;
+  /* margin: auto; */
+  margin-top: 4rem;
 }
 
 .l-heading {

@@ -54,7 +54,6 @@ img:hover,
 .partner-card:hover {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
-  /* box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05); */
 }
 
 ul {
@@ -267,7 +266,7 @@ body {
   background: transparent;
 }
 
-/* .menu-link::after {
+.menu-link::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -283,7 +282,7 @@ body {
 
 .menu-link:hover::after {
   transform: translateX(-50%) scaleX(1);
-} */
+}
 
 .current::after {
   transform: translateX(-50%) scaleX(1);
@@ -310,7 +309,6 @@ input[type="checkbox"] {
 
 .main-container {
   display: grid;
-  /* grid-template-columns: 1fr minmax(30rem, 2fr) 1fr; */
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
@@ -323,7 +321,6 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  /* margin: -20rem 0 0; */
   width: 100%;
   margin-top: -8rem;
 }
@@ -335,14 +332,7 @@ input[type="checkbox"] {
   transform: translateY(-2000rem);
   animation: moveInRight 1.3s ease-in forwards 1.5s;
   backface-visibility: hidden;
-  /* margin-top: 5rem; */
   transition: all 0.5s;
-}
-
-.main-image:hover {
-  /* -webkit-transform: translateY(-10px);
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05); */
 }
 
 .main .subtitle {

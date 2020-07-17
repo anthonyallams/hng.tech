@@ -704,3 +704,49 @@
     margin-top: -4rem;
   }
 }
+
+@media (min-width: 1500px) {
+  .three::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: var(--clr-light-blue);
+    z-index: -10;
+  }
+  .two-content .l-heading {
+    margin-bottom: 3rem;
+  }
+  .two-content p {
+    margin-bottom: 2rem;
+  }
+
+  .support-image {
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-2000rem);
+    animation: moveInRight 1.3s ease-in forwards 1.5s;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 5rem;
+  }
+
+  .support-img {
+    background: url("../images/donatebg.svg") no-repeat center center/cover;
+    width: 100%;
+    height: 45rem;
+  }
+
+  .support .btn {
+    border: none;
+    margin-top: 2rem;
+    text-align: center;
+    width: 50%;
+  }
+}
