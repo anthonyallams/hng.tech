@@ -312,7 +312,7 @@
   .support-img {
     background: url("../images/donatebg.svg") no-repeat center center/cover;
     width: 100%;
-    height: 40rem;
+    height: 30rem;
   }
 
   .support .btn {
@@ -461,17 +461,17 @@
   .image-card ~ .image-card {
     margin-bottom: 6rem;
   }
-  .groups-images .image-card {
+  /* .groups-images .image-card {
     width: 100%;
     height: 40rem;
     margin: auto;
-  }
+  } */
 
   .image-card .card-heading {
     font-size: 2rem;
     font-weight: 600;
     padding: 2rem 0;
-    margin-top: -8rem;
+    /* margin-top: -8rem; */
   }
 }
 
@@ -740,7 +740,7 @@
   .support-img {
     background: url("../images/donatebg.svg") no-repeat center center/cover;
     width: 100%;
-    height: 45rem;
+    height: 30rem;
   }
 
   .support .btn {

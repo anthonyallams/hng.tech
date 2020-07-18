@@ -31,7 +31,7 @@
 .container-nav {
   padding: 3rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -138,12 +138,12 @@ input[type="checkbox"] {
 .support-img {
   background: url("../images/d-bg.png") no-repeat center center/cover;
   width: 100%;
-  height: 40rem;
+  height: 30rem;
 }
 
 .support .btn {
   border: none;
-  margin-top: -5rem;
+  margin-top: 3rem;
   text-align: center;
   width: 65%;
 }
@@ -318,8 +318,9 @@ h4.sub {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 35rem;
-  margin: auto;
+  height: 40rem;
+  margin: 0 auto;
+  border-radius: 1rem;
   transition: all 0.4s ease-in;
 }
 
@@ -340,7 +341,7 @@ h4.sub {
 
 .image-card .img-card {
   width: 100%;
-  height: 60rem;
+  height: 30rem;
 }
 
 .image-card .btn-group {
@@ -353,7 +354,7 @@ h4.sub {
   font-size: 2rem;
   font-weight: 600;
   padding: 2rem 0;
-  margin-top: -5rem;
+  /* margin-top: -5rem; */
 }
 
 /*--------------------
