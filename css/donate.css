@@ -136,7 +136,7 @@ input[type="checkbox"] {
 }
 
 .support-img {
-  background: url("../images/donatebg.svg") no-repeat center center/cover;
+  background: url("../images/d-bg.png") no-repeat center center/cover;
   width: 100%;
   height: 40rem;
 }
@@ -329,13 +329,13 @@ h4.sub {
 }
 
 .image-card .img1 {
-  background: url(../images/donate3a.svg) no-repeat center center/cover;
+  background: url(../images/di1.png) no-repeat center center/cover;
 }
 .image-card .img2 {
-  background: url(../images/donate3b.svg) no-repeat center center/cover;
+  background: url(../images/di2.png) no-repeat center center/cover;
 }
 .image-card .img3 {
-  background: url(../images/nesa.svg) no-repeat center center/cover;
+  background: url(../images/di3.png) no-repeat center center/cover;
 }
 
 .image-card .img-card {
