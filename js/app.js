@@ -34,27 +34,7 @@ AOS.init({
   },
 });
 
-//Intersection Observer for change on scroll
-// const nav = document.querySelector(".nav");
-// const main = document.querySelector(".main");
-
-// const mainOptions = {
-//   rootMargin: "-200px 0px 0px 0px",
-// };
-
-// const mainObserver = new IntersectionObserver((entries, mainObserver) => {
-//   entries.forEach((entry) => {
-//     console.log(entry.target);
-//     if (!entry.isIntersecting) {
-//       nav.classList.add("nav-scrolled");
-//     } else {
-//       nav.classList.remove("nav-scrolled");
-//     }
-//   });
-// }, mainOptions);
-
-// mainObserver.observe(main);
-
+//Intersection observer for sticky nav
 const header = document.querySelector("nav");
 const sectionOne = document.querySelector(".subtitle");
 
@@ -77,3 +57,25 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+// Preloader
+// $(window).on("load", function () {
+//   $(".loader").slideUp(1000);
+// });
+
+// const loader = document.querySelector(".loader");
+// const body = document.querySelector(".container");
+
+// const init = () => {
+//   setTimeout(() => {
+//     loader.style.opacity = 0;
+//     loader.style.display = "none";
+
+//     body.style.display = "block";
+//     setTimeout(() => {
+//       body.style.opacity = 1;
+//     }, 50);
+//   }, 4000);
+// };
+
+// init();
