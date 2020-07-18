@@ -510,3 +510,37 @@ h4.sub {
 .footer-social .social-item i {
   color: var(--clr-white);
 }
+
+/*--------------------
+ 08. SCROLL TO TOP CSS STYLE
+-----------------*/
+.back-to-top {
+  position: fixed;
+  color: var(--clr-light-blue);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top .backIcon {
+  background-color: white;
+  border: 2x solid var(--clr-light-blue);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.back-to-top .backIcon:hover {
+  color: white;
+  background-color: var(--clr-light-blue);
+}
+
+.back-to-top:hover .backIcon {
+  color: white;
+  background-color: var(--clr-light-blue);
+}
+
+.back-to-top .backIcon:active {
+  color: white;
+  background-color: var(--clr-light-blue);
+}

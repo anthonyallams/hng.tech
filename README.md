@@ -3,7 +3,7 @@
     This repo is for recreating the hng.tech website and pages with email capture based on the design below
     Slack Username: @Allams
     Email: anthony.allams@gmail.com
-    Link:
+    Live Link: https://hngtech.netlify.app/
     Design:  https://www.figma.com/file/NVorGXXgdPR0ZPaZMsvubs/HNG-Tech?node-id=0%3A1
 
 ## FEATURES AND SPECIFICATIONS
