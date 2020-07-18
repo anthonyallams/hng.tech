@@ -516,7 +516,7 @@ h4.sub {
 -----------------*/
 .back-to-top {
   position: fixed;
-  color: var(--clr-light-blue);
+  color: var(--clr-white);
   bottom: 25px;
   right: 25px;
   font-size: 3.5rem;
@@ -524,23 +524,23 @@ h4.sub {
 }
 
 .back-to-top .backIcon {
-  background-color: white;
+  background-color: var(--clr-light-blue);
   border: 2x solid var(--clr-light-blue);
-  border-radius: 50%;
+  border-radius: 1.5rem;
   padding: 10px;
 }
 
 .back-to-top .backIcon:hover {
-  color: white;
-  background-color: var(--clr-light-blue);
+  color: var(--clr-light-blue);
+  background-color: var(--clr-white);
 }
 
 .back-to-top:hover .backIcon {
-  color: white;
-  background-color: var(--clr-light-blue);
+  color: var(--clr-light-blue);
+  background-color: var(--clr-white);
 }
 
 .back-to-top .backIcon:active {
-  color: white;
-  background-color: var(--clr-light-blue);
+  color: var(--clr-light-blue);
+  background-color: var(--clr-white);
 }
