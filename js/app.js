@@ -1,18 +1,3 @@
-//Smooth Scrolling
-$("#nav a, .btn").on("click", (e) => {
-  if (this.hash !== "") {
-    // e.preventDefault();
-
-    const hash = this.hash;
-    $("html, body").animate(
-      {
-        scrollTop: $(hash).offset().top - 100,
-      },
-      1200
-    );
-  }
-});
-
 //Collapse hamburger on anchor/li click
 let menu = document.querySelector(".menu-wrap");
 let closeIcon = document.querySelector(".toggler");
@@ -57,6 +42,44 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+//validation function and event listener
+const form = document.querySelector("form");
+const name = document.querySelector("#name");
+const email = document.querySelector("#email");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (name.value !== "" && email.value !== "") {
+    // swal('Good Job!','You will receive an email shortly',)
+    Swal.fire({
+      showclass: {
+        popup: "swal-show",
+        backdrop: "swal-backdrop-show",
+        icon: "swal-icon-show",
+      },
+      position: "center",
+      title: "Congratulations!",
+      icon: "success",
+      html: "<h2>You have been shortlisted for HNGI8</h2>",
+      showConfirmButton: false,
+      // timer: 2500,
+    });
+    document.querySelector("#email").value = "";
+    document.querySelector("#name").value = "";
+  } else {
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Sorry",
+      text: "Please check your name and email address!",
+      footer: "<a href>Then try again</a>",
+      timer: 1500,
+    });
+    document.querySelector("#email").value = "";
+    document.querySelector("#name").value = "";
+  }
+});
 
 // Preloader
 // $(window).on("load", function () {
