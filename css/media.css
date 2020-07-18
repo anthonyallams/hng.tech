@@ -622,6 +622,10 @@
 }
 
 @media (max-width: 530px) {
+  .brand {
+    width: 20rem;
+    justify-self: flex-start;
+  }
   .three::after {
     content: "";
     position: absolute;
@@ -635,6 +639,10 @@
 }
 
 @media (max-width: 380px) {
+  .brand {
+    width: 15rem;
+    justify-self: flex-start;
+  }
   .popup {
     padding: 5rem 2rem;
   }

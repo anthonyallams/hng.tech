@@ -297,7 +297,7 @@ body {
 .nav {
   background: transparent;
   color: var(--clr-dark-blue);
-  min-height: 9vh;
+  min-height: 8vh;
   border-width: thin;
   position: fixed;
   width: 100%;
