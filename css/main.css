@@ -226,7 +226,7 @@ body {
   align-items: center;
   background: var(--clr-dark-blue);
   /* background: #000; */
-  z-index: 99;
+  z-index: 200;
 }
 
 .loader {
@@ -433,7 +433,7 @@ input[type="checkbox"] {
   width: 100%;
   height: 80rem;
   transform: translateY(-2000rem);
-  animation: moveInRight 2.5s ease-in forwards;
+  animation: moveInRight 2s ease-in forwards;
   backface-visibility: hidden;
   transition: all 0.5s;
 }
@@ -444,7 +444,7 @@ input[type="checkbox"] {
   text-align: start;
   margin: 6rem 0 2rem;
   font-size: 1.6rem;
-  animation: moveInTop 2.5s ease-in;
+  animation: moveInTop 2s ease-in;
   backface-visibility: hidden;
   transition: all 0.4s ease-in;
 }
@@ -455,7 +455,7 @@ input[type="checkbox"] {
   font-weight: 700;
   line-height: 1.1;
   transform: translateX(-2000rem);
-  animation: moveInLeft 2.5s ease-in-out forwards;
+  animation: moveInLeft 2s ease-in-out forwards;
   backface-visibility: hidden;
   transition: all 0.4s ease-in;
 }
@@ -471,7 +471,7 @@ input[type="checkbox"] {
   font-size: 1.8rem;
   margin-bottom: 4rem;
   transform: translateX(-2000rem);
-  animation: moveInLeft 1.5s ease-in forwards 1s;
+  animation: moveInLeft 1.5s ease-in forwards 0.5s;
   backface-visibility: hidden;
 }
 
