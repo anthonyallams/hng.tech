@@ -92,10 +92,10 @@ $("#back-to-top").click(function () {
   return false;
 });
 
-// Preloader
-// $(window).on("load", function () {
-//   $(".loader").slideUp(1000);
-// });
+//Preloader;
+$(window).on("load", function () {
+  $(".status").slideUp(2000);
+});
 
 // const loader = document.querySelector(".loader");
 // const body = document.querySelector(".container");

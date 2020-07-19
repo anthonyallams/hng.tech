@@ -526,8 +526,9 @@ h4.sub {
 .back-to-top .backIcon {
   background-color: var(--clr-light-blue);
   border: 2x solid var(--clr-light-blue);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 10px;
+  font-size: 2.5rem;
 }
 
 .back-to-top .backIcon:hover {

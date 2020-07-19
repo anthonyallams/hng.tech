@@ -705,6 +705,7 @@ input[type="checkbox"] {
   border: 2x solid var(--clr-light-blue);
   border-radius: 50%;
   padding: 10px;
+  font-size: 2.5rem;
 }
 
 .back-to-top .backIcon:hover {
