@@ -219,8 +219,7 @@ const enableDarkMode = () => {
   document.body.classList.add("darkMode");
   // Some changes to body style
   imgLogo.setAttribute("src", "../images/logo2.svg");
-  footerLogo.setAttribute("src", "../images/hng_logo-min 1.svg");
-  button.style.color = "white";
+  footerLogo.setAttribute("src", "../images/logo2.svg");
   // ./images/hng_logo-min 1.svg
   // ./images/logo2.svg
   //Set the location storage to "enabled"

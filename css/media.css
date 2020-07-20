@@ -663,9 +663,6 @@
 }
 
 @media (max-width: 380px) {
-  .btn-large {
-    width: 100%;
-  }
   .brand {
     width: 15rem;
     justify-self: flex-start;
