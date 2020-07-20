@@ -37,6 +37,7 @@
   --clr-dark-blue: #084482;
   --clr-dark-bluei: #084482;
   --clr-light-blue: #00aeff;
+  --clr-light-bluei: #00aeff;
   --clr-white: #fff;
   --clr-whitei: #fff;
   --clr-black: #000;
@@ -127,7 +128,7 @@ body {
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  background: var(--clr-dark-blue);
+  background: var(--clr-dark-bluei);
 }
 
 .btn:hover::after {
@@ -413,7 +414,7 @@ input[type="checkbox"] {
   color: var(--clr-dark-blue);
   padding: 2rem 5rem 0;
   margin: auto;
-  /* clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%); */
+  /* clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); */
 }
 
 .main-container {
@@ -701,7 +702,7 @@ input[type="checkbox"] {
 }
 
 .form-title h2:hover {
-  color: var(--clr-dark-blue);
+  color: var(--clr-dark-bluei);
   transform: translateY(-3px);
   text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
