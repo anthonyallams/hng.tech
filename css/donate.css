@@ -362,7 +362,7 @@ h4.sub {
   -----------------*/
 .footer {
   position: relative;
-  background: url(../images/footer1.jpg) no-repeat center center/cover;
+  background: url(../images/footer1resized.jpg) no-repeat center center/cover;
   color: var(--clr-white);
   padding: 7rem 10rem;
   margin: auto;
