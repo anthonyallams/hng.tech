@@ -322,7 +322,7 @@ body {
 .nav {
   background: transparent;
   color: var(--clr-dark-blue);
-  min-height: 8vh;
+  min-height: 6vh;
   border-width: thin;
   position: fixed;
   width: 100%;
@@ -335,7 +335,7 @@ body {
 }
 
 .container-nav {
-  padding: 3rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -429,9 +429,9 @@ input[type="checkbox"] {
   grid-column: 1 / 2;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   z-index: 1;
   width: 100%;
   margin-top: -8rem;
@@ -490,13 +490,72 @@ input[type="checkbox"] {
   /* margin-left: 3rem; */
 }
 
-.main .subtitle,
 .main .btn {
   text-align: center;
 }
 
 .btn-large {
   animation: pulse 1s infinite alternate;
+  width: 80%;
+  text-align: center;
+}
+
+/* STATS SECTION */
+.stat {
+  background: url(../images/parallax-bg.jpg) fixed 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 50px 0px 70px;
+  position: relative;
+}
+
+.stat .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.stat-candidates {
+  grid-column: 1 / 2;
+}
+.stat-projects {
+  grid-column: 2 / 3;
+}
+.stat-jobs {
+  grid-column: 3 / 4;
+}
+.stat-partners {
+  grid-column: 4 / 5;
+}
+
+.stat-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.stat-row h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+.stat-row h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.stat-row i {
+  font-size: 50px;
+  color: var(--clr-light-blue);
+}
+.stat-row .counter-num {
+  color: #fff;
 }
 
 /*--------------------

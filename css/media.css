@@ -324,6 +324,16 @@
 }
 
 @media (max-width: 800px) {
+  /* Stats */
+  .stat .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .stat-row {
+    grid-column: span 1;
+  }
   .one-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -476,6 +486,16 @@
 }
 
 @media (max-width: 570px) {
+  /* Stats */
+  .stat .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .stat-row {
+    grid-column: span 1;
+  }
   .popup {
     padding: 5rem 3rem;
   }
@@ -639,6 +659,9 @@
 }
 
 @media (max-width: 380px) {
+  .btn-large {
+    width: 100%;
+  }
   .brand {
     width: 15rem;
     justify-self: flex-start;

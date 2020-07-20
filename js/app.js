@@ -170,3 +170,25 @@ const updateDOMCountDown = () => {
 getEventDate();
 //Run the time every second
 setInterval(updateDOMCountDown, 1000);
+
+// Counter JS
+const counters = document.querySelectorAll(".counter-num");
+const speed = 500;
+
+counters.forEach((counter) => {
+  const updateCount = () => {
+    const target = +counter.getAttribute("data-target");
+    // console.log(target);
+    const count = +counter.innerText;
+
+    const inc = target / speed;
+
+    if (count < target) {
+      counter.innerText = Math.ceil(count + inc);
+      setTimeout(updateCount, 1);
+    } else {
+      count.innerText = target;
+    }
+  };
+  updateCount();
+});
