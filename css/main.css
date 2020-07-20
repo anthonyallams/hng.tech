@@ -649,7 +649,7 @@ input[type="checkbox"] {
       rgba(255, 255, 255, 0.9) 50%,
       transparent 50%
     ),
-    url(../images/popup.jpg);
+    url(../images/popupresized.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(var(--clr-black), 0.2);
@@ -735,7 +735,7 @@ input[type="checkbox"] {
 -----------------*/
 .footer {
   position: relative;
-  background: url(../images/footer1.jpg) no-repeat center center/cover;
+  background: url(../images/footer1resized.jpg) no-repeat center center/cover;
   color: var(--clr-whitei);
   padding: 7rem 10rem;
   margin: auto;
