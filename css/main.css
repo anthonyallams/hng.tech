@@ -210,6 +210,15 @@ body {
   }
 }
 
+@keyframes pulse {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-0.8rem);
+  }
+}
+
 /*--------------------
   3C.LOADER CSS STYLE
 -----------------*/
@@ -484,6 +493,10 @@ input[type="checkbox"] {
 .main .subtitle,
 .main .btn {
   text-align: center;
+}
+
+.btn-large {
+  animation: pulse 1s infinite alternate;
 }
 
 /*--------------------
