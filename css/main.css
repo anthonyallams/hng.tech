@@ -7,6 +7,7 @@
 *     3A.BUTTONS
 *     3B.ANIMATIONS
 *     3C.LOADER
+*     3d.DARK MODE
 * 04.NAVIGATION CSS STYLE
 * 05.MAIN CSS STYLES
 * 06.POPUP CSS STYLES
@@ -34,12 +35,27 @@
 :root {
   --clr-body-txt: #2f2e41;
   --clr-dark-blue: #084482;
+  --clr-dark-bluei: #084482;
   --clr-light-blue: #00aeff;
   --clr-white: #fff;
+  --clr-whitei: #fff;
   --clr-black: #000;
   --clr-dark-gray: #777;
   --clr-light-gray: #999;
   --menu-speed: 0.75s;
+}
+
+.darkMode {
+  /* --clr-dark-blue: #084482; */
+  --clr-light-blue: #00aeff;
+  --secondary-color: #000;
+  --clr-whitei: #fff;
+  --clr-dark-bluei: #084482;
+  --clr-body-txt: #fff;
+  --clr-black: #fff;
+  --clr-dark-blue: #fff;
+  --button-color: #f0f0f0;
+  --clr-white: #000;
 }
 
 html {
@@ -96,7 +112,7 @@ body {
 .btn:link,
 .btn:visited {
   background-color: var(--clr-light-blue);
-  color: var(--clr-white);
+  color: var(--clr-whitei);
   text-decoration: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -278,42 +294,22 @@ body {
   filter: blur(30px);
 }
 
-/* .loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*--------------------
+  3D.DARK MODE CSS STYLE
+-----------------*/
+.dark-mode-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 30px;
+  width: 30px;
+  /* border: 2px solid var(--clr-light-blue); */
+  background: transparent;
+  border-radius: 4px;
+  padding: 4px;
+  cursor: pointer;
+  z-index: 1000000;
 }
-
-.loader > span {
-  display: inline-block;
-  background-color: purple;
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  margin: 0 1rem;
-  transform: translate3d(0);
-  animation: bounce 0.6s infinite alternate;
-}
-
-.loader > span:nth-child(2) {
-  background-color: palevioletred;
-  animation-delay: 0.2s;
-}
-.loader > span:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-@keyframes bounce {
-  from {
-    width: 0px;
-    height: 0px;
-  }
-  to {
-    width: 18px;
-    height: 18px;
-    transform: translate3d(0, -20px, 0);
-  }
-} */
 
 /*--------------------
  4. NAVBAR CSS STYLE
@@ -330,7 +326,7 @@ body {
 }
 
 .nav-scrolled {
-  background-color: var(--clr-white);
+  background-color: var(--clr-white) !important;
   box-shadow: 0 3px 20px rgba(black, 0.2);
 }
 
@@ -415,8 +411,9 @@ input[type="checkbox"] {
 .main {
   position: relative;
   color: var(--clr-dark-blue);
-  padding: 5rem 5rem 0;
+  padding: 2rem 5rem 0;
   margin: auto;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%); */
 }
 
 .main-container {
@@ -436,6 +433,7 @@ input[type="checkbox"] {
   width: 100%;
   margin-top: -8rem;
 }
+
 .main-image {
   grid-column: 2 / -1;
   background: url("../images/bg.png") no-repeat center center/cover;
@@ -490,14 +488,9 @@ input[type="checkbox"] {
   /* margin-left: 3rem; */
 }
 
-.main .btn {
-  text-align: center;
-}
-
 .btn-large {
   animation: pulse 1s infinite alternate;
-  width: 80%;
-  text-align: center;
+  align-self: flex-start;
 }
 
 /* STATS SECTION */
@@ -743,7 +736,7 @@ input[type="checkbox"] {
 .footer {
   position: relative;
   background: url(../images/footer1.jpg) no-repeat center center/cover;
-  color: var(--clr-white);
+  color: var(--clr-whitei);
   padding: 7rem 10rem;
   margin: auto;
 }
@@ -755,7 +748,7 @@ input[type="checkbox"] {
   left: 0;
   height: 100%;
   width: 100%;
-  background: var(--clr-dark-blue);
+  background: var(--clr-dark-bluei);
   opacity: 0.9;
   /* z-index: -100; */
 }
@@ -802,7 +795,7 @@ input[type="checkbox"] {
 }
 
 .footer p {
-  color: var(--clr-white);
+  color: var(--clr-whitei);
   padding: 1rem 0;
 }
 
@@ -848,7 +841,7 @@ input[type="checkbox"] {
 }
 
 .footer-item a {
-  color: var(--clr-white);
+  color: var(--clr-whitei);
 }
 
 .footer-appendage {
@@ -870,10 +863,11 @@ input[type="checkbox"] {
 
 .copyright {
   z-index: 6;
+  color: var(--clr-whitei);
 }
 
 .copyright a {
-  color: var(--clr-white);
+  color: var(--clr-whitei);
   text-decoration: underline;
 }
 
@@ -888,7 +882,7 @@ input[type="checkbox"] {
   padding: 1.5rem;
 }
 .footer-social .social-item i {
-  color: var(--clr-white);
+  color: var(--clr-whitei);
 }
 
 /*--------------------

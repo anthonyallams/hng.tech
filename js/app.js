@@ -171,7 +171,11 @@ getEventDate();
 //Run the time every second
 setInterval(updateDOMCountDown, 1000);
 
-// Counter JS
+///////////////////////////////////
+///////////////////////////////////
+//STAT COUNTER
+///////////////////////////////////
+//////////////////////////////////
 const counters = document.querySelectorAll(".counter-num");
 const speed = 500;
 
@@ -191,4 +195,57 @@ counters.forEach((counter) => {
     }
   };
   updateCount();
+});
+
+///////////////////////////////////
+///////////////////////////////////
+///////DARK MODE TOGGLE////////////
+///////////////////////////////////
+//////////////////////////////////
+//Set local storage variable
+let darkMode = localStorage.getItem("darkMode");
+//Declare DOM object
+const dark = document.querySelector(".dark-mode-toggle");
+
+console.log(darkMode);
+const nav = document.querySelector("nav");
+const imgLogo = document.querySelector(".brand-img");
+const footerLogo = document.querySelector(".logo");
+
+const enableDarkMode = () => {
+  const button = document.querySelector("#button");
+
+  //Add the dark mode class
+  document.body.classList.add("darkMode");
+  // Some changes to body style
+  imgLogo.setAttribute("src", "../images/logo2.svg");
+  footerLogo.setAttribute("src", "../images/hng_logo-min 1.svg");
+  button.style.color = "white";
+  // ./images/hng_logo-min 1.svg
+  // ./images/logo2.svg
+  //Set the location storage to "enabled"
+  localStorage.setItem("darkMode", "enabled");
+};
+
+const disableDarkMode = () => {
+  //Remove the dark mode class
+  document.body.classList.remove("darkMode");
+
+  // Some changes to body style
+  footerLogo.setAttribute("src", "../images/logo2.svg");
+  imgLogo.setAttribute("src", "../images/hng_logo-min 1.svg");
+
+  //Reset/remove the existing darkMode
+  localStorage.setItem("darkMode", null);
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode();
+}
+
+// Event listener: When user click the dark mode button
+dark.addEventListener("click", () => {
+  darkMode = localStorage.getItem("darkMode");
+  // On click, check if darkMode is enabled and enable it or disable it
+  darkMode === "enabled" ? disableDarkMode() : enableDarkMode();
 });

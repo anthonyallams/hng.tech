@@ -127,10 +127,14 @@
   }
 
   .menu-wrap .menu-links li {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     margin-left: 3rem;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
+  }
+
+  .menu-wrap .menu-links li:first-child {
+    margin-top: 2rem;
   }
 
   .menu-link {
