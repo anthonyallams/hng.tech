@@ -94,7 +94,7 @@ $("#back-to-top").click(function () {
 
 //Preloader;
 $(window).on("load", function () {
-  $(".status").slideUp(1500);
+  $(".status").slideUp(1000);
 });
 
 // const loader = document.querySelector(".loader");
