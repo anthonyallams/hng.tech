@@ -471,16 +471,6 @@
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-
-  .image-card ~ .image-card {
-    margin-bottom: 6rem;
-  }
-  /* .groups-images .image-card {
-    width: 100%;
-    height: 40rem;
-    margin: auto;
-  } */
-
   .image-card .card-heading {
     font-size: 2rem;
     font-weight: 600;
